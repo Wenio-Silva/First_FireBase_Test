@@ -1,0 +1,37 @@
+<!--<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+
+</form> -->
+
+<header>
+  <h1>Lista salva utilizando Firebase</h1>
+</header>
+
+<main>
+  <div class="content">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <label for="name">Nome de Usuário:</label>
+      <input type="text" id="username" formControlName="name">
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <div class="sidebar">
+    <!-- Anúncio Genérico -->
+    <div class="ad">
+      <h3></h3>
+      <p></p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Rodapé do Aplicativo</p>
+</footer>
